@@ -6,8 +6,8 @@ import (
 )
 
 func UserRouter(router *echo.Group) {
-	router.GET("/", controllers.IndexUser)
+	router.GET("", controllers.IndexUser)
 	router.GET("/:id", controllers.ShowUser)
-	router.POST("/", controllers.StoreUser)
+	router.POST("", controllers.StoreUser)
 	router.PUT("/:id", controllers.UpdateUser)
 }
