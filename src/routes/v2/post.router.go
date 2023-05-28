@@ -9,5 +9,5 @@ func PostRouter(router *echo.Group) {
 	router.GET("", controllers.IndexPost)
 	router.GET("/:id", controllers.ShowPost)
 	router.POST("", controllers.StorePost)
-	router.PUT("/:id", controllers.DestroyPost)
+	router.DELETE("/:id", controllers.DestroyPost)
 }
